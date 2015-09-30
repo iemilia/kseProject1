@@ -90,6 +90,8 @@ a:focus {
 
 .navbar-custom a {
     color: #fff;
+    text-shadow: 1px 1px #151517;
+    font-size: 20px;
 }
 
 .navbar-custom .nav li a {
