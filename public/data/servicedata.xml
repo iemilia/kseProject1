@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuisine>
+    <totalMatchCount> </totalMatchCount>
+    <catalog>
+        <recipe>
+            <name>Belgian Waffles</name>
+            <description>Our famous Belgian Waffles with plenty of real maple syrup</description>
+            <calories>650</calories>
+            <image> </image>
+            <course> </course>
+
+            <rating> </rating>
+            <flavors>
+                <piquant> </piquant>
+                <bitter> </bitter>
+                <sweet> </sweet>
+                <meaty> </meaty>
+                <salty> </salty>
+                <sour> </sour>
+            </flavors>
+            <place>
+                <restaurant>
+                    <name> </name>
+                    <location> </location>
+                    <image> </image>
+                    <rating> </rating>
+                    <price> </price>
+                </restaurant>
+
+                <restaurant>
+                    <name> </name>
+                    <location> </location>
+                    <image> </image>
+                    <rating> </rating>
+                    <price> </price>
+                </restaurant>
+            </place>
+        </recipe>
+        <recipe>
+            <name>Belgian Waffles</name>
+            <description>Our famous Belgian Waffles with plenty of real maple syrup</description>
+            <calories>650</calories>
+            <image> </image>
+            <course> </course>
+
+            <rating> </rating>
+            <flavors>
+                <piquant> </piquant>
+                <bitter> </bitter>
+                <sweet> </sweet>
+                <meaty> </meaty>
+                <salty> </salty>
+                <sour> </sour>
+            </flavors>
+            <place>
+                <restaurant>
+                    <name> </name>
+                    <location> </location>
+                    <image> </image>
+                    <rating> </rating>
+                    <price> </price>
+                </restaurant>
+
+                <restaurant>
+                    <name> </name>
+                    <location> </location>
+                    <image> </image>
+                    <rating> </rating>
+                    <price> </price>
+                </restaurant>
+            </place>
+        </recipe>
+    </catalog>
+</cuisine>
