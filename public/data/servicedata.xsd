@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- definition of simple elements -->
+<xs:element name="totalMatchCount" type="xs:positiveInteger"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="description" type="xs:string"/>
+<xs:element name="calories" type="xs:positiveInteger"/>
+<xs:element name="image" type="xs:string"/>
+<xs:element name="course" type="xs:string"/>
+<xs:element name="rating" type="xs:positiveInteger"/>
+<xs:element name="piquant" type="xs:decimal"/>
+<xs:element name="bitter" type="xs:decimal"/>
+<xs:element name="sweet" type="xs:decimal"/>
+<xs:element name="meaty" type="xs:decimal"/>
+<xs:element name="salty" type="xs:decimal"/>
+<xs:element name="sour" type="xs:decimal"/>
+<xs:element name="nameRestaurant" type="xs:string"/>
+<xs:element name="location" type="xs:string"/>
+<xs:element name="ratingRest" type="xs:positiveInteger"/>
+<xs:element name="price" type="xs:positiveInteger"/>
+
+
+<!-- definition of complex elements -->
+<xs:element name="flavors">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="piquant"/>
+      <xs:element ref="bitter"/>
+      <xs:element ref="sweet"/>
+      <xs:element ref="meaty"/>
+      <xs:element ref="sour"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="restaurant">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="nameRestaurant"/>
+      <xs:element ref="location" minOccurs="0"/>
+      <xs:element ref="ratingRest"/>
+      <xs:element ref="price"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="place">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="restaurant" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="recipe">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="description"/>
+      <xs:element ref="calories"/>
+      <xs:element ref="image"/>
+      <xs:element ref="course"/>
+      <xs:element ref="rating"/>
+      <xs:element ref="flavors"/>
+      <xs:element ref="place"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="catalog">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="recipe" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="cuisine">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="totalMatchCount"/>
+      <xs:element ref="catalog"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
